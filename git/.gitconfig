@@ -1,7 +1,6 @@
 [user]
     name = Rashiem Mims
     email = rmims@akhevatech.com
-    signingkey = E074BC3E0A9E3C6B
 [core]
     attributesfile = ~/.gitattributes_global
     excludesfile = ~/.gitignore_global
