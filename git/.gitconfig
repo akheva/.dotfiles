@@ -1,0 +1,69 @@
+[user]
+    name = Rashiem Mims
+    email = rmims@akhevatech.com
+    signingkey = E074BC3E0A9E3C6B
+[core]
+    attributesfile = ~/.gitattributes_global
+    excludesfile = ~/.gitignore_global
+    editor = nvim
+[color]
+    ui = true
+[color "branch"]
+    current = green bold
+    remote = red bold
+[color "diff"]
+    meta = yellow bold
+    commit = green bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "status"]
+    added = green bold
+    changed = red bold
+    untracked = red bold
+[github]
+    user = akheva
+[diff]
+    tool = nvimdiff 
+[difftool]
+    prompt = false
+[difftool "nvimdiff"]
+    cmd = nvim -d "$LOCAL" "$REMOTE"
+[alias]
+    l = log --pretty=format:'%C(yellow)%h%C(magenta)%d%C(reset) %s %C(cyan)%cN %C(blue)(%cd)%C(reset)' --date=format:'%a %F %R' --graph --use-mailmap
+    s = status -sb
+[push]
+    default = simple
+[merge]
+    tool = nvimdiff
+    renameLimit = 999999
+[mergetool]
+    keepBackup = false
+[pager]
+    ; diff = diff-so-fancy | less --tabs=4 -RFX
+    ; show = diff-so-fancy | less --tabs=4 -RFX
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[delta]
+  syntax-theme = gruvbox-dark
+  file-style = yellow bold
+  file-decoration-style = yellow ol ul
+  hunk-header-style = syntax
+  hunk-header-decoration-style = magenta box
+  line-numbers = true
+  line-numbers-left-style = black
+  line-numbers-right-style = black
+[commit]
+    gpgsign = true
+[gpg]
+    program = /usr/local/bin/gpg
